@@ -1,0 +1,144 @@
+<resources>
+    <string name="app_name">Sign In</string>
+
+    <!-- menu_main.xml -->
+    <string name="action_settings">Settings</string>
+    <string name="action_about">About</string>
+
+    <!-- activity_about.xml -->
+    <string name="about_about_wtb">About</string>
+    <string name="about_sign_tv">Sign In</string>
+    <string name="about_thanks_tv">Thanks for open source</string>
+    <string name="about_author_tv">About the author</string>
+
+    <!-- activity_holiday.xml -->
+    <string name="holiday_leave_wtb">Leave</string>
+    <string name="holiday_start_vbf">Start time</string>
+    <string name="holiday_end_vbf">End Time</string>
+    <string name="holiday_reason_met">Please briefly explain the leave reason...</string>
+    <string name="holiday_submit_br">Submit</string>
+
+    <!-- activity_holiday_record.xml -->
+    <string name="holiday_record_record_wtb">Leave record</string>
+
+    <!-- activity_login.xml -->
+    <string name="login_login_mtb">User login</string>
+    <string name="login_username_met">Username</string>
+    <string name="login_password_met">Password</string>
+    <string name="login_rpw_met">Remember password</string>
+    <string name="login_loginbutton_br">log in</string>
+    <string name="login_toRegister_bf">Go to register</string>
+
+    <!-- activity_main.xml -->
+    <string name="main_signin_tb">Sign In</string>
+    <string name="main_signin_tv">Sign-in date：2018-03-26 Mon</string>
+    <string name="main_morning_tv">Morning</string>
+    <string name="main_afternoon_tv">Afternoon</string>
+    <string name="main_evening_tv">Evening</string>
+    <string name="main_start_br">Sign in</string>
+    <string name="main_end_br">Sign out</string>
+    <string name="main_toleave_fab">Take leave</string>
+    <string name="main_leaverecord_fab">Leave record</string>
+    <string name="main_signrecord_fab">Sign-in record</string>
+
+    <!-- activity_register.xml -->
+    <string name="register_register_mtb">User registration</string>
+    <string name="register_username_met">Username</string>
+    <string name="register_password_met">Password</string>
+    <string name="register_register_br">registration</string>
+
+    <!-- activity_setting.xml -->
+    <string name="setting_setting_wtb">Settings</string>
+    <string name="setting_check_tv">Check for updates</string>
+    <string name="setting_exit_br">Exit the current login</string>
+
+    <!-- activity_signin_record.xml -->
+    <string name="signin_record__record_wtb">Sign-in record</string>
+
+    <!-- item_holiday_record.xml -->
+    <string name="item_holiday_record_reason_tv">Reason</string>
+    <string name="item_holiday_record_time1_tv">Time1</string>
+    <string name="item_holiday_record_time2_tv">Time2</string>
+
+    <!-- item_signin_record.xml -->
+    <string name="item_signin_record_date_tv">Sign in on March 26, 2017</string>
+    <string name="item_signin_record_morning_tv">Morning</string>
+    <string name="item_signin_record_afternoon_tv">Afternoon</string>
+    <string name="item_signin_record_evening_tv">Evening</string>
+    <string name="item_signin_record_time1_tv">Time1</string>
+    <string name="item_signin_record_time2_tv">Time2</string>
+
+    <!-- AboutActivity.java -->
+    <string name="about_thanks_message">Thanks to open source projects and authors</string>
+    <string name="about_us_message">About</string>
+    <string name="about_ok_message">OK</string>
+    <string name="about_thanks_string">okgo, gson, utilcode, floating action button, material-dialogs:core, etc.</string>
+    <string name="about_us_string">WANG Yi 20140509 WANG Ziqi 20140611</string>
+
+    <!-- HolidayActivity.java -->
+    <string name="holiday_picker_message">Date picker dialog</string>
+    <string name="holiday_noNet_message">Network is not connected</string>
+    <string name="holiday_noBegin_message">Start time cannot be empty</string>
+    <string name="holiday_noEnd_message">End time cannot be empty</string>
+    <string name="holiday_noReason_message">Leave reason can not be empty</string>
+    <string name="holiday_prompt_message">Message</string>
+    <string name="holiday_wait_message">Information is uploading, please wait</string>
+    <string name="holiday_success_message">Uploaded successfully</string>
+    <string name="holiday_wrong_message">System error, please try again later</string>
+
+    <!-- HolidayRecordActivity.java -->
+    <string name="holidayRecord_prompt_message">Message</string>
+    <string name="holidayRecord_loading_message">Data loading</string>
+    <string name="holidayRecord_noRecord_message">No leave record</string>
+    <string name="holidayRecord_wrong_message">System error, please try again later</string>
+    <string name="holidayRecord_refresh_message">Refresh is successful, no new data</string>
+
+    <!-- LoginActivity.java -->
+    <string name="login_noNet_message">Network is not connected</string>
+    <string name="login_noName_message">Username cannot be empty</string>
+    <string name="login_noPW_message">Password cannot be empty</string>
+    <string name="login_prompt_message">Message</string>
+    <string name="login_logging_message">Logging</string>
+    <string name="login_success_message">Login successful</string>
+    <string name="login_wrong_message">System error</string>
+    <string name="login_noUser_message">User does not exist</string>
+    <string name="login_wrongPW_message">Incorrect password</string>
+
+    <!-- MainActivity.java -->
+    <string name="main_date_message">Sign in date:</string>
+    <string name="main_prompt_message">Message</string>
+    <string name="main_submit_message">Submit</string>
+    <string name="main_signing_message">Signing</string>
+    <string name="main_main_message">Mainactivity____></string>
+    <string name="main_code_message">Status code:</string>
+    <string name="main_maintain_message">The background is maintaining</string>
+    <string name="main_success_message">Sign in successful</string>
+    <string name="main_wrong_message">System error occurred, please contact the program developer</string>
+    <string name="main_double_message">You have already sign in, do not double sign in!</string>
+    <string name="main_exit_message">Press again to exit the program</string>
+
+    <!-- RegisterActivity.java -->
+    <string name="register_noNet_message">Network is not connected</string>
+    <string name="register_noName_message">Username cannot be empty</string>
+    <string name="register_noPW_message">Password cannot be empty</string>
+    <string name="register_prompt_message">Message</string>
+    <string name="register_registering_message">Registering, please wait</string>
+    <string name="register_success_message">Registration is successful, please login</string>
+    <string name="register_wrong_message">System error</string>
+    <string name="register_used_message">Username has been registered</string>
+
+    <!-- SettingActivity.java -->
+    <string name="setting_prompt_message">Message</string>
+    <string name="setting_exit_message">Sure to exit the current login?</string>
+    <string name="setting_yes_message">Yes</string>
+    <string name="setting_cancel_message">Cancel</string>
+    <string name="setting_noUpdate_message">No update</string>
+
+    <!-- SignInRecordActivity.java -->
+    <string name="signInRecord_noRecord_message">No sign record</string>
+    <string name="signInRecord_wrong_message">System error, please try again later</string>
+    <string name="signInRecord_refresh_message">Refresh is successful, no new data</string>
+
+</resources>
+
+

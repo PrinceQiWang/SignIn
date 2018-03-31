@@ -1,0 +1,144 @@
+<resources>
+    <string name="app_name">Signer</string>
+
+    <!-- menu_main.xml -->
+    <string name="action_settings">Paramètres</string>
+    <string name="action_about">À propos</string>
+
+    <!-- activity_about.xml -->
+    <string name="about_about_wtb">À propos</string>
+    <string name="about_sign_tv">Signer</string>
+    <string name="about_thanks_tv">Merci pour l'open source</string>
+    <string name="about_author_tv">À propos de l'auteur</string>
+
+    <!-- activity_holiday.xml -->
+    <string name="holiday_leave_wtb">Demandé de congé</string>
+    <string name="holiday_start_vbf">Heure de début</string>
+    <string name="holiday_end_vbf">Heure de fin</string>
+    <string name="holiday_reason_met">Veuillez expliquer brièvement la raison du congé ...</string>
+    <string name="holiday_submit_br">Soumettre</string>
+
+    <!-- activity_holiday_record.xml -->
+    <string name="holiday_record_record_wtb">Enregistrements du congé</string>
+
+    <!-- activity_login.xml -->
+    <string name="login_login_mtb">Utilisateur en ligne</string>
+    <string name="login_username_met">Nom d'utilisateur</string>
+    <string name="login_password_met">Mot de passe</string>
+    <string name="login_rpw_met">Se souvenir du mot</string>
+    <string name="login_loginbutton_br">S'identifier</string>
+    <string name="login_toRegister_bf">Aller à s'inscrire</string>
+
+    <!-- activity_main.xml -->
+    <string name="main_signin_tb">Connexion</string>
+    <string name="main_signin_tv">Date d'inscription: 2018-03-26 lun</string>
+    <string name="main_morning_tv">Matin</string>
+    <string name="main_afternoon_tv">Après-midi</string>
+    <string name="main_evening_tv">Nuit</string>
+    <string name="main_start_br">Signer</string>
+    <string name="main_end_br">Signer en parti</string>
+    <string name="main_toleave_fab">Demander un congé</string>
+    <string name="main_leaverecord_fab">Enregistrements du congé</string>
+    <string name="main_signrecord_fab">Enregistrements du signature</string>
+
+    <!-- activity_register.xml -->
+    <string name="register_register_mtb">Enregistrement de l'utilisateur</string>
+    <string name="register_username_met">Nom d'utilisateur</string>
+    <string name="register_password_met">Mot de pass</string>
+    <string name="register_register_br">S'inscrir</string>
+
+    <!-- activity_setting.xml -->
+    <string name="setting_setting_wtb">Paramètres</string>
+    <string name="setting_check_tv">Vérifier la mise à jour</string>
+    <string name="setting_exit_br">Quitter le login actuel</string>
+
+    <!-- activity_signin_record.xml -->
+    <string name="signin_record__record_wtb">Enregistrements du signature</string>
+
+    <!-- item_holiday_record.xml -->
+    <string name="item_holiday_record_reason_tv">Raison</string>
+    <string name="item_holiday_record_time1_tv">Temps1</string>
+    <string name="item_holiday_record_time2_tv">Temps2</string>
+
+    <!-- item_signin_record.xml -->
+    <string name="item_signin_record_date_tv">Signer à le 26 mars 2017</string>
+    <string name="item_signin_record_morning_tv">Matin</string>
+    <string name="item_signin_record_afternoon_tv">Après-midi</string>
+    <string name="item_signin_record_evening_tv">Nuit</string>
+    <string name="item_signin_record_time1_tv">Temps1</string>
+    <string name="item_signin_record_time2_tv">Temps2</string>
+
+    <!-- AboutActivity.java -->
+    <string name="about_thanks_message">Merci aux les projets open source et les auteurs</string>
+    <string name="about_us_message">À propos</string>
+    <string name="about_ok_message">OK</string>
+    <string name="about_thanks_string">okgo, gson, utilcode, floating action button, material-dialogs:core, etc.</string>
+    <string name="about_us_string">WANG Yi 20140509 WANG Ziqi 20140611</string>
+
+    <!-- HolidayActivity.java -->
+    <string name="holiday_picker_message">Boîte de dialogue de sélection de date</string>
+    <string name="holiday_noNet_message">Le réseau n'est pas connecté</string>
+    <string name="holiday_noBegin_message">Le jour de début ne peut pas être vide</string>
+    <string name="holiday_noEnd_message">Le jour de fin ne peut pas être vide</string>
+    <string name="holiday_noReason_message">La raison du congé ne peut pas être vide</string>
+    <string name="holiday_prompt_message">Message</string>
+    <string name="holiday_wait_message">L'information est en train de télécharger, veuillez patienter</string>
+    <string name="holiday_success_message">L'envoi réussit</string>
+    <string name="holiday_wrong_message">Erreur de système, veuillez réessayer plus tard</string>
+
+    <!-- HolidayRecordActivity.java -->
+    <string name="holidayRecord_prompt_message">Message</string>
+    <string name="holidayRecord_loading_message">Chargement des données</string>
+    <string name="holidayRecord_noRecord_message">Aucun enregistrement de congé</string>
+    <string name="holidayRecord_wrong_message">Erreur de système, veuillez réessayer plus tard</string>
+    <string name="holidayRecord_refresh_message">L'actualisation est réussie, aucun nouvelles données</string>
+
+    <!-- LoginActivity.java -->
+    <string name="login_noNet_message">Le réseau n'est pas connecté</string>
+    <string name="login_noName_message">Le nom d'utilisateur ne peut pas être vide</string>
+    <string name="login_noPW_message">Le mot de passe ne peut pas être vide</string>
+    <string name="login_prompt_message">Message</string>
+    <string name="login_logging_message">Connexion</string>
+    <string name="login_success_message">Connexion réussie</string>
+    <string name="login_wrong_message">Erreur de système</string>
+    <string name="login_noUser_message">L'utilisateur n'existe pas</string>
+    <string name="login_wrongPW_message">Mot de passe incorrect</string>
+
+    <!-- MainActivity.java -->
+    <string name="main_date_message">Date de signer:</string>
+    <string name="main_prompt_message">Message</string>
+    <string name="main_submit_message">Soumettre</string>
+    <string name="main_signing_message">Signature</string>
+    <string name="main_main_message">Mainactivity____></string>
+    <string name="main_code_message">Status code:</string>
+    <string name="main_maintain_message">L'arrière-plan est en maintenance</string>
+    <string name="main_success_message">Connexion réussie</string>
+    <string name="main_wrong_message">Une erreur système s'est produite, veuillez contacter le développeur du programme</string>
+    <string name="main_double_message">Vous êtes déjà connecté, ne doublez pas votre signature!</string>
+    <string name="main_exit_message">Appuyez encore pour quitter le programme</string>
+
+    <!-- RegisterActivity.java -->
+    <string name="register_noNet_message">Le réseau n'est pas connecté</string>
+    <string name="register_noName_message">Le nom d'utilisateur ne peut pas être vide</string>
+    <string name="register_noPW_message">Le mot de passe ne peut pas être vide</string>
+    <string name="register_prompt_message">Message</string>
+    <string name="register_registering_message">Inscription, veuillez patienter</string>
+    <string name="register_success_message">L'inscription est réussie, veuillez vous identifier</string>
+    <string name="register_wrong_message">Erreur de système</string>
+    <string name="register_used_message">Nom d'utilisateur a été enregistré</string>
+
+    <!-- SettingActivity.java -->
+    <string name="setting_prompt_message">Message</string>
+    <string name="setting_exit_message">Sûr de quitter le login actuel?</string>
+    <string name="setting_yes_message">Oui</string>
+    <string name="setting_cancel_message">Annuler</string>
+    <string name="setting_noUpdate_message">Aucun mise à jour</string>
+
+    <!-- SignInRecordActivity.java -->
+    <string name="signInRecord_noRecord_message">Aucun enregistrement de signe</string>
+    <string name="signInRecord_wrong_message">SErreur de système, veuillez réessayer plus tard</string>
+    <string name="signInRecord_refresh_message">L'actualisation est réussie, aucun nouvelles données</string>
+
+</resources>
+
+
