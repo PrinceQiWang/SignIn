@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.jxchexie.signin">
+    package="com.efrei.signin">
 
     <!-- if you want to load images from the internet -->
     <uses-permission android:name="android.permission.INTERNET" />
@@ -16,31 +16,31 @@
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
 
     <application
-        android:name="com.jxchexie.app.App"
+        android:name="com.efrei.app.App"
         android:allowBackup="true"
         android:icon="@mipmap/icon4"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LoginActivity">
+        <activity android:name="com.efrei.signin.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".HolidayActivity">
+        <activity android:name="com.efrei.signin.HolidayActivity">
         </activity>
-        <activity android:name=".HolidayRecordActivity">
+        <activity android:name="com.efrei.signin.HolidayRecordActivity">
         </activity>
-        <activity android:name=".SignInRecordActivity">
+        <activity android:name="com.efrei.signin.SignInRecordActivity">
         </activity>
-        <activity android:name=".MainActivity">
+        <activity android:name="com.efrei.signin.MainActivity">
         </activity>
-        <activity android:name=".RegisterActivity">
+        <activity android:name="com.efrei.signin.RegisterActivity">
         </activity>
-        <activity android:name=".SettingActivity">
+        <activity android:name="com.efrei.signin.SettingActivity">
         </activity>
-        <activity android:name=".AboutActivity">
+        <activity android:name="com.efrei.signin.AboutActivity">
         </activity>
     </application>
 

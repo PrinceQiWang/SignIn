@@ -8,7 +8,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/white"
     android:orientation="vertical"
-    tools:context="com.jxchexie.signin.MainActivity">
+    tools:context="com.efrei.signin.MainActivity">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/HolidayRecordToolbar"
