@@ -2,10 +2,12 @@ package com.efrei.signin;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.res.Resources;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
@@ -29,6 +31,7 @@ import java.util.HashMap;
 import java.util.Timer;
 import java.util.TimerTask;
 
+import io.paperdb.Paper;
 import okhttp3.Call;
 import okhttp3.Response;
 
@@ -54,15 +57,57 @@ public class MainActivity extends AppCompatActivity {
 
     private boolean quit = false; //设置退出标识
 
-
+    @Override
+    protected void attachBaseContext(Context newbase){
+        super.attachBaseContext(LocaleHelper.onAttach(newbase,"en"));
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        /*Paper.init(this);
+        String language = Paper.book().read("language");
+        if(language == null)
+            Paper.book().write("language","en");*/
         initView();
         initEvent();
+        //updateView ((String)Paper.book().read("language"));
     }
+
+    /*private void updateView(String lang){
+        Context context = LocaleHelper.setLocale(this,lang);
+        Resources resources = context.getResources();
+
+    }
+
+    public boolean onCreateOptionsMenu(Menu menu){
+        getMenuInflater().inflate(R.menu.menu_main,menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item){
+        if (item.getItemId() == R.id.action_EN)
+        {
+            Paper.book().write("language","en");
+            updateView((String)Paper.book().read("language"));
+            //Log.v("EN", String.valueOf(item));
+        }
+        else if (item.getItemId() == R.id.action_FR)
+        {
+            Paper.book().write("language","fr");
+            updateView((String)Paper.book().read("language"));
+            //Log.v("FR", String.valueOf(item));
+        }
+        else if (item.getItemId() == R.id.action_ZH)
+        {
+            Paper.book().write("language","zh");
+            updateView((String)Paper.book().read("language"));
+            //Log.v("ZH", String.valueOf(item));
+        }
+        return true;
+    }*/
 
     private void initView(){
         btn_StartAm=(ButtonRectangle)findViewById(R.id.btn_StartAm);
@@ -75,7 +120,7 @@ public class MainActivity extends AppCompatActivity {
         actionB = (FloatingActionButton) findViewById(R.id.action_b);
         actionC = (FloatingActionButton) findViewById(R.id.action_c);
         tv_signin=(TextView)findViewById(R.id.tv_signin);
-        java.text.SimpleDateFormat sdf = new java.text.SimpleDateFormat("yyyy-MM-dd  EEE");
+        java.text.SimpleDateFormat sdf = new java.text.SimpleDateFormat(" yyyy-MM-dd  EEE");
         String str_Date=TimeUtils.getCurTimeString(sdf);
         tv_signin.setText(getResources().getString(R.string.main_date_message)+str_Date);
         mainToolbar=(Toolbar)findViewById(R.id.mainToolbar);
@@ -122,9 +167,7 @@ public class MainActivity extends AppCompatActivity {
         btn_StartAm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                /*if(!checkLabMac()){
-                    return;
-                }*/
+
                 SignIn(Constant.AM_SIGNIN);
             }
         });
@@ -132,9 +175,7 @@ public class MainActivity extends AppCompatActivity {
         btn_EndAm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                /*if(!checkLabMac()){
-                    return;
-                }*/
+
                 SignIn(Constant.AM_SIGNOUT);
             }
         });
@@ -142,36 +183,28 @@ public class MainActivity extends AppCompatActivity {
         btn_StartPm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               /* if(!checkLabMac()){
-                    return;
-                }*/
+
                 SignIn(Constant.PM_SIGNIN);
             }
         });
         btn_EndPm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                /*if(!checkLabMac()){
-                    return;
-                }*/
+
                 SignIn(Constant.PM_SIGNOUT);
             }
         });
         btn_StartN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                /*if(!checkLabMac()){
-                    return;
-                }*/
+
                 SignIn(Constant.NIGHT_SIGNIN);
             }
         });
         btn_EndN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                /*if(!checkLabMac()){
-                    return;
-                }*/
+
                 SignIn(Constant.NIGHT_SIGNOUT);
             }
         });
@@ -201,24 +234,7 @@ public class MainActivity extends AppCompatActivity {
                 .progress(true, 0)
                 .show();
     }
-    /*比对路由器的MAC地址*/
-    /*public boolean checkLabMac(){
-        //获取WiFIMac地址
-        if(NetworkUtils.isWifiConnected(MainActivity.this)){
-            WifiManager wifi = (WifiManager) getSystemService(Context.WIFI_SERVICE);
-            WifiInfo info = wifi.getConnectionInfo();
-            str_mac=info.getBSSID();
-            if(!str_mac.equals(Constant.E412_MAC)){
-                signSuccess("非实验室WIFI,无法签到！");
-                return false;
-            }else {
-                return true;
-            }
-        }else{
-            signSuccess("WIFI未连接，请先连接实验室WIFI！");
-            return false;
-        }
-    }*/
+
     public void SignIn(String type){
         showWaitDialog();
         /*获取当前时间*/
@@ -291,11 +307,6 @@ public class MainActivity extends AppCompatActivity {
             super.onBackPressed();
             finish();
         }
-    }
-
-    @Override
-    protected void attachBaseContext(Context newbase){
-        super.attachBaseContext(LocaleHelper.onAttach(newbase,"en"));
     }
 
 }

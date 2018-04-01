@@ -1,9 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Signer</string>
 
     <!-- menu_main.xml -->
     <string name="action_settings">Paramètres</string>
     <string name="action_about">À propos</string>
+    <string name="action_EN">Anglais</string>
+    <string name="action_FR">Français</string>
+    <string name="action_ZH">Chinois</string>
 
     <!-- activity_about.xml -->
     <string name="about_about_wtb">À propos</string>
@@ -30,16 +34,16 @@
     <string name="login_toRegister_bf">Aller à s'inscrire</string>
 
     <!-- activity_main.xml -->
-    <string name="main_signin_tb">Connexion</string>
-    <string name="main_signin_tv">Date d'inscription: 2018-03-26 lun</string>
+    <string name="main_signIn_tb">Connexion</string>
+    <string name="main_signIn_tv">Date d'inscription: 2018-03-26 lun</string>
     <string name="main_morning_tv">Matin</string>
     <string name="main_afternoon_tv">Après-midi</string>
     <string name="main_evening_tv">Nuit</string>
     <string name="main_start_br">Signer</string>
     <string name="main_end_br">Signer en parti</string>
-    <string name="main_toleave_fab">Demander un congé</string>
-    <string name="main_leaverecord_fab">Enregistrements du congé</string>
-    <string name="main_signrecord_fab">Enregistrements du signature</string>
+    <string name="main_askLeave_fab">Demander un congé</string>
+    <string name="main_leaveRecord_fab">Enregistrements du congé</string>
+    <string name="main_signRecord_fab">Enregistrements du signature</string>
 
     <!-- activity_register.xml -->
     <string name="register_register_mtb">Enregistrement de l'utilisateur</string>
@@ -105,7 +109,7 @@
     <string name="login_wrongPW_message">Mot de passe incorrect</string>
 
     <!-- MainActivity.java -->
-    <string name="main_date_message">Date de signer:</string>
+    <string name="main_date_message">Date de signer: </string>
     <string name="main_prompt_message">Message</string>
     <string name="main_submit_message">Soumettre</string>
     <string name="main_signing_message">Signature</string>
@@ -130,7 +134,7 @@
     <!-- SettingActivity.java -->
     <string name="setting_prompt_message">Message</string>
     <string name="setting_exit_message">Sûr de quitter le login actuel?</string>
-    <string name="setting_yes_message">Oui</string>
+    <string name="setting_ok_message">D'accord</string>
     <string name="setting_cancel_message">Annuler</string>
     <string name="setting_noUpdate_message">Aucun mise à jour</string>
 
@@ -140,5 +144,3 @@
     <string name="signInRecord_refresh_message">L'actualisation est réussie, aucun nouvelles données</string>
 
 </resources>
-
-

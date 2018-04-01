@@ -4,10 +4,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 
-/**
- * 下拉加载更多...
- * Created by Administrator on 2016/11/14.
- */
+
 public abstract class EndLessOnScrollListener extends  RecyclerView.OnScrollListener{
 
     //声明一个LinearLayoutManager

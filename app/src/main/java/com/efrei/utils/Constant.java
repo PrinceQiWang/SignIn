@@ -1,8 +1,6 @@
 package com.efrei.utils;
 
-/**
- * Created by Administrator on 2016/11/11.
- */
+
 public class Constant {
 
         public static final String SUCCESS="success"; //成功

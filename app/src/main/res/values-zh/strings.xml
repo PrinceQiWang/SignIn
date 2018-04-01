@@ -1,9 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">签到</string>
 
     <!-- menu_main.xml -->
     <string name="action_settings">设置</string>
     <string name="action_about">关于</string>
+    <string name="action_EN">英语</string>
+    <string name="action_FR">法语</string>
+    <string name="action_ZH">中文</string>
 
     <!-- activity_about.xml -->
     <string name="about_about_wtb">关于</string>
@@ -30,16 +34,16 @@
     <string name="login_toRegister_bf">去注册</string>
 
     <!-- activity_main.xml -->
-    <string name="main_signin_tb">签到界面</string>
-    <string name="main_signin_tv">签到日期：2018-03-26 Mon</string>
+    <string name="main_signIn_tb">签到界面</string>
+    <string name="main_signIn_tv">签到日期：2018-03-26 Mon</string>
     <string name="main_morning_tv">上午</string>
     <string name="main_afternoon_tv">下午</string>
     <string name="main_evening_tv">晚上</string>
     <string name="main_start_br">签到</string>
     <string name="main_end_br">签退</string>
-    <string name="main_toleave_fab">我要请假</string>
-    <string name="main_leaverecord_fab">请假记录</string>
-    <string name="main_signrecord_fab">签到记录</string>
+    <string name="main_askLeave_fab">我要请假</string>
+    <string name="main_leaveRecord_fab">请假记录</string>
+    <string name="main_signRecord_fab">签到记录</string>
 
     <!-- activity_register.xml -->
     <string name="register_register_mtb">用户注册</string>
@@ -130,7 +134,7 @@
     <!-- SettingActivity.java -->
     <string name="setting_prompt_message">提示</string>
     <string name="setting_exit_message">确定退出当前登录?</string>
-    <string name="setting_yes_message">确定</string>
+    <string name="setting_ok_message">确定</string>
     <string name="setting_cancel_message">取消</string>
     <string name="setting_noUpdate_message">暂无更新</string>
 
@@ -140,5 +144,3 @@
     <string name="signInRecord_refresh_message">刷新成功，没有新数据</string>
 
 </resources>
-
-

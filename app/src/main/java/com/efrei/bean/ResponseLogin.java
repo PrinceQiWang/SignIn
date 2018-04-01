@@ -2,9 +2,7 @@ package com.efrei.bean;
 
 import java.io.Serializable;
 
-/**
-* Created by Administrator on 2016/11/11.
-        */
+
 public class ResponseLogin implements Serializable {
     private String status;
     private String msg;

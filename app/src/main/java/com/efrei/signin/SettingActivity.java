@@ -47,7 +47,7 @@ public class SettingActivity extends AppCompatActivity {
                 new MaterialDialog.Builder(SettingActivity.this)
                         .title(getResources().getString(R.string.setting_prompt_message))
                         .content(getResources().getString(R.string.setting_exit_message))
-                        .positiveText(getResources().getString(R.string.setting_yes_message))
+                        .positiveText(getResources().getString(R.string.setting_ok_message))
                         .negativeText(getResources().getString(R.string.setting_cancel_message))
                         .onPositive(new MaterialDialog.SingleButtonCallback() {
                             @Override
@@ -89,7 +89,7 @@ public class SettingActivity extends AppCompatActivity {
         MaterialDialog dialog = new MaterialDialog.Builder(this)
                 .title( getResources().getString(R.string.setting_prompt_message))
                 .content(msg)
-                .positiveText(getResources().getString(R.string.setting_yes_message))
+                .positiveText(getResources().getString(R.string.setting_ok_message))
                 .show();
     }
 }

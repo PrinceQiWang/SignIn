@@ -3,9 +3,7 @@ package com.efrei.bean;
 import java.io.Serializable;
 import java.util.ArrayList;
 
-/**
- * Created by Administrator on 2016/11/11.
- */
+
 public class ResponseSigninRecord implements Serializable {
     private String status;
     private ArrayList<SignIn> msg;

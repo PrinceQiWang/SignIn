@@ -14,4 +14,25 @@
         app:showAsAction="never"
         />
 
+    <!--<item
+        android:id="@+id/action_EN"
+        android:title="@string/action_EN"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/action_FR"
+        android:title="@string/action_FR"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/action_ZH"
+        android:title="@string/action_ZH"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        />-->
+
 </menu>

@@ -1,10 +1,8 @@
 package com.efrei.api;
 
-/**
- * Created by Yi on 2018/03/10.
- */
+
 public class Api {
-    /*配置baseUlhttp://192.168.43.148:8080*/
+    /*配置baseUlhttp*/
     public static final String BASE_URL="https://server-end-android.appspot.com/phone_api/";
     /*用户登录*/
     public static final String LOGIN=BASE_URL + "login";

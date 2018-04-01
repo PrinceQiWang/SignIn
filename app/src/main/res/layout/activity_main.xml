@@ -17,7 +17,7 @@
         android:layout_height="wrap_content"
         android:minHeight="?attr/actionBarSize"
         android:background="?attr/colorPrimaryDark"
-        app:title="@string/main_signin_tb"
+        app:title="@string/main_signIn_tb"
         >
     </android.support.v7.widget.Toolbar>
 
@@ -41,7 +41,7 @@
             android:paddingLeft="20dp"
             android:layout_marginTop="80dip"
             android:layout_marginBottom="30dip"
-            android:text="@string/main_signin_tv" />
+            android:text="@string/main_signIn_tv" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -168,7 +168,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             fab:fab_colorNormal="@color/blue"
-            fab:fab_title="@string/main_toleave_fab"
+            fab:fab_title="@string/main_askLeave_fab"
             fab:fab_icon="@drawable/holiday"
             fab:fab_colorPressed="@color/white_pressed"/>
 
@@ -177,7 +177,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             fab:fab_colorNormal="@color/blue"
-            fab:fab_title="@string/main_leaverecord_fab"
+            fab:fab_title="@string/main_leaveRecord_fab"
             fab:fab_icon="@drawable/holiday_record"
             fab:fab_colorPressed="@color/white_pressed"/>
 
@@ -186,7 +186,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             fab:fab_colorNormal="@color/blue"
-            fab:fab_title="@string/main_signrecord_fab"
+            fab:fab_title="@string/main_signRecord_fab"
             fab:fab_icon="@drawable/signin"
             fab:fab_colorPressed="@color/white_pressed"/>
 

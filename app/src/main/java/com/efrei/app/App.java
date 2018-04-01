@@ -11,9 +11,7 @@ import com.lzy.okgo.cache.CacheEntity;
 import com.lzy.okgo.cache.CacheMode;
 import com.lzy.okgo.cookie.store.PersistentCookieStore;
 
-/**
- * Created by Administrator on 2016/11/11.
- */
+
 public class App extends Application {
 
 

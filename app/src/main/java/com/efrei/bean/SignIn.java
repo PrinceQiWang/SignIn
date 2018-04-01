@@ -2,9 +2,7 @@ package com.efrei.bean;
 
 import com.google.gson.annotations.SerializedName;
 
-/**
- * Created by Administrator on 2016/11/10.
- */
+
 public class SignIn {
     @SerializedName("_id")
     private String id;//主键

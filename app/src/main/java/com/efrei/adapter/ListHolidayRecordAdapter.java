@@ -13,9 +13,6 @@ import com.efrei.signin.R;
 import java.util.ArrayList;
 
 
-/**
- * Created by linkmax on 2016/8/3.
- */
 public class ListHolidayRecordAdapter extends RecyclerView.Adapter<ListHolidayRecordAdapter.ListViewHolder> {
 
 
